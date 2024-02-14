@@ -1,9 +1,8 @@
 import React from 'react'
 import { FaGithubAlt } from "react-icons/fa";
 import { PiLinkedinLogo } from "react-icons/pi";
-import { FaDiscord } from "react-icons/fa";
-import { SiMicrosoftteams } from "react-icons/si";
 import { Link as RouterLink } from "react-router-dom";
+import { CgMail } from "react-icons/cg";
 
 const Navbar = () => {
   return (
@@ -17,11 +16,8 @@ const Navbar = () => {
             <RouterLink to="https://www.linkedin.com/in/mixu-s-759b5b291/" className="social-link">
               <PiLinkedinLogo className='icon Lin'/>
             </RouterLink>
-            <RouterLink to="https://discord.com/" className="social-link">
-              <FaDiscord className='icon DC'/>
-            </RouterLink>
-            <RouterLink to="https://teams.microsoft.com/" className="social-link">
-              <SiMicrosoftteams className='icon DC' />
+            <RouterLink to="mailto:mixu@devsndesigns.fi" className="social-link">
+              <CgMail className='icon'/>
             </RouterLink>
           </div>
         </div>
