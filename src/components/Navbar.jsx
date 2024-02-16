@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className='head-box'>
         <div className="header">
-          <h1>Mixu</h1>
+          <h1>#Mixu</h1>
           <div className='socials'>
             <RouterLink to="https://github.com/gitmixu" className="social-link">
               <FaGithubAlt className='icon git'/>
