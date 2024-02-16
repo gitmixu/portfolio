@@ -2,10 +2,8 @@ import React from 'react'
 
 const Blog = () => {
   return (
-    <div className='blog-box'>
-      <div className="header">
-          <h1 style={{"color":"#fff"}}>Blog tulossa pian</h1>
-      </div>
+    <div className="blog-box">
+          <h1>Blog tulossa pian</h1>
     </div>
   )
 }

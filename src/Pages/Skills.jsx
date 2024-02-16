@@ -3,8 +3,6 @@ import React from 'react'
 const Skills = () => {
   return (
     <div className='skills-box'>
-      <div className="skills-layer">
-        <p style={{"color":"#8C52FF"}}>web and software developer with a designer eye</p>
         <div className='skills'>
           <p>python</p>
           <p>JavaScript</p>
@@ -32,7 +30,6 @@ const Skills = () => {
           <p>Adobe [Ai] [Ps]</p>
           <p>Figma</p>
         </div>
-      </div>
     </div>
   )
 }
