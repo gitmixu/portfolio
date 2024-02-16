@@ -166,11 +166,8 @@ html {
 
 .services-box h1 {
      color: #fff;
-<<<<<<< HEAD
      font-size: 1.5em;
-=======
-  text-align: center;
->>>>>>> c3c3e50ae6ffc39fd063609cbec98c77097a09ab
+     text-align: center;
 }
 
 /* MEDIA */
@@ -190,7 +187,7 @@ html {
           font-size: 1em;
      }
      h1 {
-          font-size: 1.5em;
+          font-size: 1em;
      }
      .skills-box {
           width: 100%;
