@@ -6,22 +6,20 @@ import { CgMail } from "react-icons/cg";
 
 const Navbar = () => {
   return (
-    <div className='head-box'>
-        <div className="header">
-          <h1>#Mixu</h1>
-          <div className='socials'>
-            <RouterLink to="https://github.com/gitmixu" className="social-link">
-              <FaGithubAlt className='icon git'/>
-            </RouterLink>
-            <RouterLink to="https://www.linkedin.com/in/mixu-s-759b5b291/" className="social-link">
-              <PiLinkedinLogo className='icon Lin'/>
-            </RouterLink>
-            <RouterLink to="mailto:mixu@devsndesigns.fi" className="social-link">
-              <CgMail className='icon'/>
-            </RouterLink>
-          </div>
+      <div className="header">
+        <h1>DevsNDesigns</h1>
+        <div className='socials'>
+          <RouterLink to="https://github.com/gitmixu" className="social-link">
+            <FaGithubAlt className='icon'/>
+          </RouterLink>
+{/*           <RouterLink to="https://www.linkedin.com/in/mixu-s-759b5b291/" className="social-link">
+            <PiLinkedinLogo className='icon'/>
+          </RouterLink> */}
+          <RouterLink to="mailto:info@devsndesigns.fi" className="social-link">
+            <CgMail className='icon'/>
+          </RouterLink>
         </div>
-    </div>
+      </div>
   )
 }
 
