@@ -1,15 +1,19 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import HeaderSection from './components/HeaderSection'
-import BodySection from './components/BodySection'
+import { BrowserRouter as Router } from 'react-router-dom'
+import Logo from './components/Logo'
+import Services from './components/Services'
+import Skills from './components/Skills'
 
 const App = () => {
 
   return (
     <Router>
-      <div className="main-page">
-        <HeaderSection />
-        <BodySection />
+      <div className='main'>
+        <Logo />
+        <div className="about">
+{/*           <Services />
+          <Skills  /> */}
+        </div>
       </div>
     </Router>
   )
