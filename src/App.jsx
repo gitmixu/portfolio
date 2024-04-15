@@ -10,12 +10,8 @@ const App = () => {
   return (
     <Router>
       <div className='main'>
-        <Logo />
-        <div className="about">
-{/*           <Services />
-          <Skills  /> */}
-        </div>
-        <Footer />
+        <h1>DevsNDesigns</h1>
+        <p>sivut tulossa pian!</p>
       </div>
     </Router>
   )

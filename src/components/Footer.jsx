@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <div className='footer'>
      <p>info@devsndesigns.fi</p>
-     <div className="socials">
+{/*      <div className="socials">
           <FaTiktok />
           <FaInstagram />
-     </div>
+     </div> */}
     </div>
   )
 }

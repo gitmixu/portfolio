@@ -2,6 +2,7 @@
 
 :root {
   --black: #2e2e2e;
+  --ghost: #E3E3E3;
   --lila: #ACA5FF;
   --light: #f5f5f5;
 }
@@ -31,7 +32,9 @@ html {
      height: 100vh;
 
      display: flex;
+     flex-direction: column;
      justify-content: center;
+     align-items: center;
 }
 
 .logo {
@@ -42,9 +45,10 @@ html {
 .logo h1 {
      left: 0;
      right: 0;
-     font-size: 12em;
+     top: -10px;
+     font-weight: bold;
+     font-size: 6em;
      position: absolute;
-     top: -120px;
      justify-content: center;
 }
 
@@ -52,21 +56,87 @@ html {
      color: var(--lila);
 }
 
+.services {
+     width: 100%;
+}
+
+.services h1 {
+     width: 100%;
+     text-align: center;
+     color: var(--ghost);
+     font-size: 6em;
+     position: relative;
+     z-index: -1;
+     bottom: -60px;
+}
+
+.services .titles {
+     padding: 10px 0;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: var(--light);
+}
+
+.services .titles .title {
+     height: 80px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.services .titles .title p {
+     width: 150px;
+     text-align: center;
+     font-size: 1.1em;
+}
+
+.services .titles .title .line {
+     margin: 10px 0;
+     width: 1px;
+     height: 30px;
+     background: #000;
+}
+
+.services .description {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+
+.services .description p {
+     padding: 20px;
+     width: 600px;
+     border-radius: 30px;
+     border: 1px solid var(--black);
+}
+
+.skills {
+     width: 100%;
+     height: 200px;
+     display: flex;
+     align-items: end;
+     justify-content: center;
+}
+
 .footer {
      position: absolute;
      bottom: 0;
      width: 1400px;
      height: 50px;
-     background-color: var(--black);
+     background-color: var(--light);
      border-radius: 20px 20px 0 0;
+     border: 1px solid var(--black);
      display: flex;
-     justify-content: space-between;
+     justify-content: center;
      align-items: center;
      padding: 0 20px;
 }
 
 .footer p {
-     color: var(--light);
+     color: var(--black);
 }
 
 .footer .socials {
