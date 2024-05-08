@@ -2,10 +2,16 @@
 
 :root {
   --black: #2e2e2e;
-  --main: #E5E8EF;
-  --db-clr: #A7B3D0;
+  --main: #786FF8;
+  --bg-clr: #ECEDF2;
+  --orange-clr: #FFB906;
      --box-s: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-     --light-transparent-bg: rgba(255, 255, 255, 0.671);
+     --light-transparent-bg: rgba(255, 255, 255, 0.527);
+     --blue-transparent-bg: rgba(120, 111, 248, 0.527);
+}
+
+html {
+     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 * {
@@ -17,156 +23,130 @@
   transition: .2s linear;
   scroll-behavior: smooth;
   cursor: pointer;
-  overflow: hidden;
+  -webkit-tap-highlight-color: transparent; /* transparent with keyword */
+  -webkit-tap-highlight-color: rgba(0,0,0,0); /* transparent with rgba */
+  -webkit-tap-highlight-color: hsla(0,0,0,0); /* transparent with hsla */
+  -webkit-tap-highlight-color: #00000000; /* transparent with hex with alpha */
+  -webkit-tap-highlight-color: #0000; /* transparent with short hex with alpha */
 }
 
 #root {
-     height: 100vh;
+     background-color: var(--bg-clr);
      width: 100%;
      display: flex;
      justify-content: center;
+}
+
+.container {
+     width: 100%;
+     display: flex;
+
+     flex-direction: column;
      align-items: center;
 }
 
 .main {
+     background-color: var(--light-transparent-bg);
+     height: 100vh;
+     backdrop-filter: blur(100px);
      width: 1400px;
-     height: 100%;
 }
 
-.main .flowers {
+.ball {
+     width: 800px;
+     height: 800px;
+     background-color: var(--main);
+     border-radius: 100%;
+     top: -250px;
+
+     position: absolute;
+}
+
+.main .logo {
      width: 100%;
-     height: 100%;
-     left: 0;
-     top: 0;
-     right: 0;
-     position: absolute;
-     z-index: -1;
-}
+     display: flex;
+     justify-content: center;
 
-.main .flowers .red {
-     width: 600px;
-     position: absolute;
-     z-index: -1;
-     top: 200px;
-     left: -165px;
-}
-
-.main .flowers .yellow {
-     min-width: 400px;
-     width: 400px;
-     position: absolute;
-     z-index: -1;
-     top: 10px;
-     right: -60px;
-}
-
-.main .title h1{
-     font-size: 10em;
-}
-
-.main .title h1 span{
-     color: #cec1ff;
-}
-
-.main .title .d{
      position: relative;
      top: -100px;
 }
 
-.main .notification {
-     font-size: 2em;
+.main .logo img{
+     width: 500px;
+}
+
+.contact {
      width: 100%;
-     text-align: right;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     bottom: 20px;
+}
+
+.contact > p {
+     color: var(--main);
+}
+
+.contact .email {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+
+     background-color: var(--orange-clr);
+     border-radius: 5px;
+
+     box-shadow: var(--box-s);
+
+}
+
+.contact .email button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 2em;
+     border: 0;
+     padding: 10px;
+     border-radius: 5px;
+
+     background-color: #ffd469;
+
+     box-shadow: var(--box-s);
+}
+
+.contact .email p {
+     padding: 10px;
 }
 
 @media screen and (max-width: 1500px) {
      .main {
+          background-color: var(--light-transparent-bg);
           width: 100%;
-          height: 100%;
      }
 }
 
 @media screen and (max-width: 1250px) {
-     .main .title h1{
-          font-size: 7em;
-     }
-
-     .main .title .d{
-          position: relative;
-          top: -70px;
-     }
-     .main .flowers .red {
-          width: 400px;
-          top: 200px;
-          left: -165px;
-     }
-     
-     .main .flowers .yellow {
-          width: 600px;
-          top: 300px;
-          right: -300px;
-     }
-
-     .main .notification {
-          text-align: center;
-     }
 }
 
 @media screen and (max-width: 800px) {
+     .ball {
+          width: 100%;
+     }
 }
 
 @media screen and (max-width: 500px) {
-     .main .title h1{
-          font-size: 5.5em;
+
+
+     .main .logo {
+          top: -100px;
      }
 
-     .main .title .d{
-          position: relative;
-          top: -60px;
+     .main .logo img{
+          width: 100%;
      }
-     .main .flowers .red {
-          width: 400px;
-          top: 250px;
-          left: -200px;
-     }
-     
-     .main .flowers .yellow {
-          width: 600px;
-          top: 400px;
-          right: -300px;
-     }
-
-     .main .notification {
-          font-size: 2em;
-          text-align: center;
-     }
-
 }
 
 @media screen and (max-width: 400px) {
-          .main .title h1{
-               font-size: 4.5em;
-          }
-     
-          .main .title .d{
-               position: relative;
-               top: -50px;
-          }
-          .main .flowers .red {
-               width: 400px;
-               top: 250px;
-               left: -200px;
-          }
-          
-          .main .flowers .yellow {
-               width: 600px;
-               top: 400px;
-               right: -300px;
-          }
-     
-          .main .notification {
-               font-size: 1.5em;
-               text-align: center;
-          }
 
 }
