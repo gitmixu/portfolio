@@ -1,0 +1,13 @@
+.info {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+
+.info .services {
+     width: 600px;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 20px;
+}

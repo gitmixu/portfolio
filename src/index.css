@@ -8,6 +8,8 @@
      --box-s: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
      --light-transparent-bg: rgba(255, 255, 255, 0.527);
      --blue-transparent-bg: rgba(120, 111, 248, 0.527);
+     --box-s: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+     --inner-box-s: rgba(0, 0, 0, 0.144) 3.2px 3.2px 8px 0px inset, rgba(255, 255, 255, 0.219) -3.2px -3.2px 8px 0px inset, rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 html {
@@ -30,121 +32,51 @@ html {
   -webkit-tap-highlight-color: #0000; /* transparent with short hex with alpha */
 }
 
-#root {
-     background-color: var(--bg-clr);
-     width: 100%;
-     display: flex;
-     justify-content: center;
-}
-
-.container {
-     width: 100%;
-     display: flex;
-
-     flex-direction: column;
-     align-items: center;
-}
+.white-box {
+     padding: 20px;
+     border-radius: 20px;
+     background-color: #fff;
+     box-shadow: var(--inner-box-s);
+     border: 2px solid #fff;
+   }
 
 .main {
-     background-color: var(--light-transparent-bg);
+     width: 100%;
      height: 100vh;
-     backdrop-filter: blur(100px);
-     width: 1400px;
-}
+     padding: 50px;
 
-.ball {
-     width: 800px;
-     height: 800px;
-     background-color: var(--main);
-     border-radius: 100%;
-     top: -250px;
-
-     position: absolute;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
 }
 
 .main .logo {
+     text-align: center;
      width: 100%;
-     display: flex;
-     justify-content: center;
-
-     position: relative;
-     top: -100px;
+     height: 10%;
 }
 
-.main .logo img{
-     width: 500px;
-}
-
-.contact {
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     position: absolute;
-     bottom: 20px;
-}
-
-.contact > p {
-     color: var(--main);
-}
-
-.contact .email {
-     display: flex;
-     align-items: center;
-     gap: 5px;
-
-     background-color: var(--orange-clr);
-     border-radius: 5px;
-
-     box-shadow: var(--box-s);
-
-}
-
-.contact .email button {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-size: 2em;
-     border: 0;
-     padding: 10px;
-     border-radius: 5px;
-
-     background-color: #ffd469;
-
-     box-shadow: var(--box-s);
-}
-
-.contact .email p {
-     padding: 10px;
-}
 
 @media screen and (max-width: 1500px) {
-     .main {
-          background-color: var(--light-transparent-bg);
-          width: 100%;
-     }
+
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1000px) {
+     .white-box {
+          padding: 10px;
+          border-radius: 10px;
+        }
 }
 
 @media screen and (max-width: 800px) {
-     .ball {
-          width: 100%;
+     .main {
+          padding: 20px;
      }
+
 }
 
 @media screen and (max-width: 500px) {
 
-
-     .main .logo {
-          top: -100px;
-     }
-
-     .main .logo img{
-          width: 100%;
-     }
 }
 
 @media screen and (max-width: 400px) {
