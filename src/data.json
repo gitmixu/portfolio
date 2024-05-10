@@ -1,7 +1,8 @@
 {
      "services": [
-          ["UI / UX", "Tekninen toteutus", "Sivujen julkaiseminen", "SEO", "Ylläpito", "Kuvitus (illustration)", "ChatBot", "Drone video"],
-          ["Somistus", "UI / UX", "Kuvitus (illustration)", "valokuvat", "3D mallinnus"],
-          ["Sovellukset", "Datastruktuuri"]
+          ["UI / UX", "Tekninen toteutus", "Sivujen julkaiseminen", "SEO", "Ylläpito", "Kuvitus (illustration)", "ChatBot", "Drone video", "Kuvat", "Blog", "Ylläpito"],
+          ["Somistus", "UI / UX", "Kuvitus (illustration)", "Kuvat", "3D mallinnus", "Julisteet", "Logo", "Käyntikortit", "Brand", "Drone video"],
+          ["Sovellukset", "Datastruktuuri", "UI / UX"],
+          []
      ]
 }

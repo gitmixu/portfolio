@@ -7,7 +7,7 @@ const Home = ( {selectionControl} ) => {
   return (
     <div className='home'>
      <div className="selection white-box">
-          <h1>Sivut</h1>
+          <h1>Custom sivut</h1>
           <button style={{"backgroundColor": "#92ED83"}} onClick={() => selectionControl(0)} ><MdKeyboardArrowRight /></button>
      </div>
      <div className="selection white-box">
