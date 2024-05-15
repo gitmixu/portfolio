@@ -1,0 +1,91 @@
+:root {
+     --gradient: linear-gradient(
+          45deg,
+          #fff,
+          #4400ff,
+          #fff
+     );
+}
+
+.home {
+     padding-top: 180px;
+     width: 100%;
+     overflow: hidden;
+
+     display: flex;
+     justify-content: space-around;
+}
+
+.home .title {
+     padding: 50px 0;
+     font-size: 4em;
+     font-weight: 400;
+}
+
+.home .title span {
+     font-family: "Bad Script", cursive;
+}
+
+.home .img {
+     width: 600px;
+}
+
+.home .img img {
+     width: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+}
+@media screen and (max-width: 1200px) {
+     .home .title {
+          font-size: 3em;
+     }
+     .home {
+          padding-top: 180px;
+          padding-left: 20px;
+          justify-content: start;
+     }
+     .home .img {
+          position: absolute;
+          right: 0;
+          top: 20%;
+          z-index: -1;
+     }
+}
+
+@media screen and (max-width: 1000px) {
+     .home {
+          padding-top: 100px;
+     }
+
+     .home .img {
+          top: 40%;
+     }
+}
+
+@media screen and (max-width: 800px) {
+     .home .img {
+          width: 500px;
+          position: absolute;
+          right: 10%;
+          top: 50%;
+          z-index: -1;
+     }
+}
+
+@media screen and (max-width: 430px) {
+     .home .title {
+          font-size: 2.5em;
+     }
+     .home {
+          padding-top: 70px;
+     }
+
+     .home .img {
+          width: 500px;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          z-index: -1;
+     }
+}
