@@ -32,3 +32,9 @@
           padding: 180px 20px 20px 20px;
      }
 }
+
+@media screen and (max-width: 500px) {
+     .social-media {
+          padding-top: 80px;
+     }
+}

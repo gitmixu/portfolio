@@ -47,3 +47,9 @@
      color: rgb(0, 136, 255);
      padding: 20px;
 }
+
+@media screen and (max-width: 500px) {
+     .designs .title {
+          padding: 80px 20px 20px 20px;
+     }
+}
