@@ -1,5 +1,34 @@
 .social-media {
      padding-top: 180px;
      width: 100%;
-     text-align: center;
+
+     display: flex;
+     flex-direction: column;
+     gap: 100px;
+}
+
+.social-media .services {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+
+.social-media .services .box {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.social-media .services .box h1 {
+     font-size: 1.5em;
+}
+
+.social-media span {
+     color: rgb(0, 136, 255);
+}
+
+@media screen and (max-width: 1400px) {
+     .social-media {
+          padding: 180px 20px 20px 20px;
+     }
 }

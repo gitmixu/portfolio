@@ -20,6 +20,8 @@
      padding: 50px 0;
      font-size: 4em;
      font-weight: 400;
+
+     overflow: hidden;
 }
 
 .home .title span {
@@ -28,10 +30,14 @@
 
 .home .img {
      width: 600px;
+
+     overflow: hidden;
 }
 
 .home .img img {
      width: 100%;
+     overflow: hidden;
+
 }
 
 @media screen and (max-width: 1500px) {

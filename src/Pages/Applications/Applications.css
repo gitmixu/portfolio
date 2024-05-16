@@ -1,5 +1,18 @@
 .applications {
-     padding-top: 180px;
+     padding: 180px 20px 20px 20px;
      width: 100%;
-     text-align: center;
+
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+
+.applications .title{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+
+.applications span {
+     color: rgb(0, 136, 255);
 }

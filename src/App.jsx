@@ -10,6 +10,7 @@ import Websites from './Pages/Websites/Websites';
 import Designs from './Pages/Designs/Designs';
 import SocialMedia from './Pages/SocialMedia/SocialMedia';
 import Applications from './Pages/Applications/Applications';
+import Gallery from './Pages/Gallery/Gallery';
 
 
 const App = () => {
@@ -24,7 +25,6 @@ const App = () => {
           <Route path='designs' element={<Designs/>}/>
           <Route path='sosiaalinen-media' element={<SocialMedia/>}/>
           <Route path='sovellukset' element={<Applications/>}/>
-
         </Routes>
       </div>
     </Router>
