@@ -6,11 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 
 /* PAGES */
 import Home from './Pages/Home/Home';
-import Websites from './Pages/Websites/Websites';
-import Designs from './Pages/Designs/Designs';
-import SocialMedia from './Pages/SocialMedia/SocialMedia';
-import Applications from './Pages/Applications/Applications';
-import Gallery from './Pages/Gallery/Gallery';
+import Servs from './pages/Servs/Servs';
 
 
 const App = () => {
@@ -21,10 +17,7 @@ const App = () => {
       <div className='main'>
         <Routes>
           <Route path='*' element={<Home/>}/>
-          <Route path='nettisivut' element={<Websites/>}/>
-          <Route path='designs' element={<Designs/>}/>
-          <Route path='sosiaalinen-media' element={<SocialMedia/>}/>
-          <Route path='sovellukset' element={<Applications/>}/>
+          <Route path='palvelut' element={<Servs/>}/>
         </Routes>
       </div>
     </Router>
